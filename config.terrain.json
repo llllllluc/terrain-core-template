@@ -9,21 +9,42 @@
     }
   },
   "mainnet": {
-    "_connection": {
+    "phoenix-1": {
       "chainID": "phoenix-1",
-      "URL": "https://phoenix-lcd.terra.dev"
+      "lcd": "https://phoenix-lcd.terra.dev",
+      "gasAdjustment": 1.75,
+      "gasPrices": { "uluna": 0.015 },
+      "prefix": "terra"
+    },
+    "juno-1": {
+      "chainID": "juno-1",
+      "lcd": "https://lcd-juno.mib.tech",
+      "gasAdjustment": 1.75,
+      "gasPrices": { "ujuno": 0.0025 },
+      "prefix": "juno"
     }
   },
   "testnet": {
-    "_connection": {
+    "pisco-1": {
       "chainID": "pisco-1",
-      "URL": "https://pisco-lcd.terra.dev"
+      "lcd": "https://pisco-lcd.terra.dev",
+      "gasAdjustment": 3.5,
+      "gasPrices": { "uluna": 0.015 },
+      "prefix": "terra"
+    },
+    "pion-1": {
+      "lcd": "https://rest-palvus.pion-1.ntrn.tech",
+      "chainID": "pion-1",
+      "gasAdjustment": 3.5,
+      "gasPrices": { "untrn": 0.015 },
+      "prefix": "neutron"
     }
   },
-  "localterra": {
-    "_connection": {
+  "local": {
+    "localterra": {
+      "lcd": "http://localhost:1317",
       "chainID": "localterra",
-      "URL": "http://localhost:1317"
+      "prefix": "terra"
     }
   }
 }

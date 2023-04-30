@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {
-    "@terra-money/terrain": "^0.5.8"
+    "@terra-money/terrain": "git+https://github.com/llllllluc/terrain.git#interchain2"
   },
   "workspaces": [
     "frontend"
